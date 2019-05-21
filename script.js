@@ -1,5 +1,5 @@
 function createCalendar(id, year, month) {
-    id = document.getElementById(id);
+    id = document.getElementById(id); // why you need this? you takes id from function
     const table = document.createElement('table');
     const tr = document.createElement('tr');
     const td = document.createElement('td');
@@ -41,5 +41,5 @@ function createCalendar(id, year, month) {
     }
   }
   
-  createCalendar('cal', 2019, 2);
+  createCalendar('cal', 2019, 2);  // your calendar breaks down when we want other months for example createCalendar('cal', 2019, 9)
   
